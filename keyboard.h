@@ -4,6 +4,6 @@
 #include "common.h"
 
 void init_keyboard ();
-u8int numToSymbol (u8int n); 
-																																																																																				
+u8int numToSymbol (u8int n);
+char getc(); 																																																																																				
 #endif

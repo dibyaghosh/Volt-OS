@@ -116,5 +116,5 @@ char getc(){
 		keyboardFlag=0;		 
 		return input;	
 	}
-	return "\0";
+	return 0;
 }
