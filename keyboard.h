@@ -5,5 +5,5 @@
 
 void init_keyboard ();
 u8int numToSymbol (u8int n);
-char getc(); 																																																																																				
+char getfromstdin(); 																																																																																				
 #endif

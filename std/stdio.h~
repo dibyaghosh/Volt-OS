@@ -18,7 +18,10 @@ int fputs (char *c, FILE *stream);
 // Read methods
 int fgetc (FILE *stream);
 char *fgets (char *str, int num, FILE *stream);
+// Position methods
 long int ftell (FILE *stream);
 int fseek (FILE *stream, long int offset, int origin);
 
+
+int getchar ( void );
 #endif

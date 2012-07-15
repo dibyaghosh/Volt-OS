@@ -22,4 +22,6 @@ char *fgets (char *str, int num, FILE *stream);
 long int ftell (FILE *stream);
 int fseek (FILE *stream, long int offset, int origin);
 
+
+int getchar ( void );
 #endif

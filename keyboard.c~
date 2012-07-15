@@ -18,8 +18,8 @@ u8int keyboard[] = {
 u8int caps = 0;
 u8int shiftKey = 0;
 
-u8int keyboardFlag=0;
-u8int input='\0';
+s8int keyboardFlag=0;
+char input='\0';
 static void keyboard_callback (registers_t regs) {
 	static unsigned char scancode;
 	
@@ -56,7 +56,7 @@ static void keyboard_callback (registers_t regs) {
 		modChar = numToSymbol(modChar);
 	input=modChar;
 	keyboardFlag=1;
-	put_char(modChar);
+	//put_char(modChar);
 	
 }
 	
@@ -111,10 +111,13 @@ u8int numToSymbol (u8int n) {
 	return n;
 }
 
-char getc(){
-	if(keyboardFlag){
+char getfromstdin(){
+	char chara='\0';	
+	if(keyboardFlag==1){
 		keyboardFlag=0;		 
-		return input;	
+		chara=input;	
 	}
-	return 0;
+	input='\0';
+	return chara;
+
 }

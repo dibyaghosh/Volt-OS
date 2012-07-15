@@ -1,6 +1,8 @@
 #include "stdio.h"
 #include "../malloc.h"
 #include "../video.h"
+#include "../timer.h"
+#include "../keyboard.h"
 FILE *fopen (char *filename, char *mode) {
   FILE file;
   file.name = filename;
@@ -33,7 +35,7 @@ char *fgets (char *str, int num, FILE *stream) {
   while (num > a) {
     str[a++] = fgetc(stream);
   }
-  str[a]="\0";
+  str[a]='\0';
   return str;
 }
 // Cursor methods
@@ -48,4 +50,14 @@ int fseek (FILE *stream, long int offset, int origin) {
   if (origin == 2)
     stream->position = stream->size - offset;
   return 0;
+}
+
+//stdin
+int getchar ( void ){
+	char character='\0';	
+	while(character=='\0'){
+		character=getfromstdin();
+	}
+	return character;
+
 }
