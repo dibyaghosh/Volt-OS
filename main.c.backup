@@ -1,0 +1,29 @@
+#include "video.h"
+#include "common.h"
+
+
+
+int main(struct multiboot *mboot_ptr)
+{
+  // All our initialisation calls will go in here.
+update_settings(15,0);
+print("Hi!");
+monitor_clear();	
+/*monitor_write("VOLT OS!\n");
+u32int* a;
+u32int i;
+for (i=1; i<21;i++){
+a = malloc(4);
+*a = 5*i;
+monitor_write("Allocating resources: ");
+monitor_write_dec(4);
+monitor_write("bytes; \t Currently at address");
+monitor_write_hex(a);
+monitor_write("\tValue: ");
+monitor_write_dec((u32int) *a);
+monitor_write("\n");
+}
+*/
+
+return 0;
+}

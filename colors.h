@@ -1,0 +1,16 @@
+#define BLACK 0			//	0000
+#define BLUE 1			//	0001
+#define GREEN 2			//	0010
+#define CYAN 3			//	0011
+#define RED 4			//	0100
+#define MAGENTA 5		//	0101
+#define BROWN 6			//	0110
+#define LIGHT_GREY 7		//	0111
+#define DARK_GREY 8		//	1000
+#define LIGHT_BLUE 9		//	1001
+#define LIGHT_GREEN 10		//	1010
+#define LIGHT_CYAN 11		//	1011
+#define LIGHT_RED 12		//	1100
+#define LIGHT_MAGENTA 13	//	1101
+#define YELLOW 14		//	1110
+#define WHITE 15		//	1111

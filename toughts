@@ -1,0 +1,14 @@
+void print_dec(u32int n){
+if (n=0){
+	put_char('0');
+}
+char c[32];
+int i;
+for (i=31;n>=1;i--){
+	c[i]=n%10+"0";
+	n/=10;
+}
+for(i=i;i<32;i++){
+	put_char(c[i]);
+}
+}
